@@ -171,6 +171,12 @@
   \metropolis@frametitlestrut@start%
   \insertframetitle%
   \nolinebreak%
+  %Add logo to frametitle
+  \hfill%
+  \begin{beamercolorbox}[wd=0.1\paperwidth, right, rightskip=\metropolis@frametitle@padding]{frametitle}%
+    \vspace{-4pt}%
+    \includegraphics[height=16pt]{logowhite.pdf}%
+  \end{beamercolorbox}%
   \metropolis@frametitlestrut@end%
   \end{beamercolorbox}%
 }
