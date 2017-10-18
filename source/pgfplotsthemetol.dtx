@@ -49,6 +49,16 @@
 \definecolor{TolLightPink}{HTML}{AA4466}
 \definecolor{TolDarkPink}{HTML}{882255}
 \definecolor{TolLightPurple}{HTML}{AA4499}
+\definecolor{bfBlue}{HTML}{207499}
+\definecolor{bfPurple}{HTML}{6413b3}
+\definecolor{bfRed}{HTML}{b3150b}
+\definecolor{bfBrown}{HTML}{b3820b}
+\definecolor{bfGreen}{HTML}{4eb313}
+\definecolor{bfMidBlue}{HTML}{79acc2}
+\definecolor{bfMidPurple}{HTML}{a272d1}
+\definecolor{bfMidRed}{HTML}{d1726c}
+\definecolor{bfMidBrown}{HTML}{d1b46c}
+\definecolor{bfMidGreen}{HTML}{95d172}
 %    \end{macrocode}
 %
 % To use these colors, we describe ``cycle lists'' from which PGF chooses
@@ -59,12 +69,12 @@
 %
 %    \begin{macrocode}
 \pgfplotscreateplotcyclelist{mbarplot cycle}{%
-  {draw=TolDarkBlue,    fill=TolDarkBlue!70},
-  {draw=TolLightBrown,  fill=TolLightBrown!70},
-  {draw=TolLightGreen,  fill=TolLightGreen!70},
+  {draw=bfBlue,    fill=bfMidBlue},
+  {draw=bfBrown,  fill=bfMidBrown},
+  {draw=bfGreen,  fill=bfMidGreen},
   {draw=TolDarkPink,    fill=TolDarkPink!70},
-  {draw=TolDarkPurple,  fill=TolDarkPurple!70},
-  {draw=TolDarkRed,     fill=TolDarkRed!70},
+  {draw=bfPurple,  fill=bfMidPurple},
+  {draw=bfRed,     fill=bfMidRed},
   {draw=TolDarkBrown,   fill=TolDarkBrown!70},
   {draw=TolLightRed,    fill=TolLightRed!70},
   {draw=TolLightPink,   fill=TolLightPink!70},
@@ -79,10 +89,10 @@
 %   Colors and styles intended for line charts with up to 4 series.
 %    \begin{macrocode}
 \pgfplotscreateplotcyclelist{mlineplot cycle}{%
-  {TolDarkBlue, mark=*, mark size=1.5pt},
-  {TolLightBrown, mark=square*, mark size=1.3pt},
-  {TolLightGreen, mark=triangle*, mark size=1.5pt},
-  {TolDarkBrown, mark=diamond*, mark size=1.5pt},
+  {bfMidBlue, mark=*, mark size=1.5pt},
+  {bfMidBrown, mark=square*, mark size=1.3pt},
+  {bfMidGreen, mark=triangle*, mark size=1.5pt},
+  {bfMidRed, mark=diamond*, mark size=1.5pt},
 }
 %    \end{macrocode}
 % \end{macro}

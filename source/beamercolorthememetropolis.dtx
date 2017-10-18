@@ -78,9 +78,14 @@
 %
 %    \begin{macrocode}
 \definecolor{mDarkBrown}{HTML}{604c38}
-\definecolor{mDarkTeal}{HTML}{23373b}
-\definecolor{mLightBrown}{HTML}{EB811B}
-\definecolor{mLightGreen}{HTML}{14B03D}
+\definecolor{mDarkTeal}{HTML}{464646}
+\definecolor{mLightBrown}{HTML}{fc4830}
+\definecolor{mLightGreen}{HTML}{4EB313}
+\definecolor{mLightGrey}{HTML}{f2f2f2}
+\definecolor{mBlue}{HTML}{207499}
+\definecolor{mPaleBlue}{HTML}{a6c7d6}
+\definecolor{mPaleRed}{HTML}{e0a19d}
+\definecolor{mPaleGreen}{HTML}{b8e0a1}
 %    \end{macrocode}
 %
 %
@@ -137,8 +142,8 @@
 %    \begin{macrocode}
 \setbeamercolor{palette primary}{%
   use=normal text,
-  fg=normal text.bg,
-  bg=normal text.fg
+  fg=white,
+  bg=mBlue
 }
 \setbeamercolor{frametitle}{%
   use=palette primary,
@@ -155,8 +160,8 @@
 %    \begin{macrocode}
 \setbeamercolor{progress bar}{%
   use=alerted text,
-  fg=alerted text.fg,
-  bg=alerted text.fg!50!black!30
+  fg=mBlue,
+  bg=mBlue!50!black!30
 }
 \setbeamercolor{title separator}{
   use=progress bar,
@@ -193,15 +198,25 @@
   \setbeamercolor{block title}{%
     use=normal text,
     fg=normal text.fg,
-    bg=normal text.bg!80!fg
+    bg=mPaleBlue
   }
   \setbeamercolor{block body}{
     use={block title, normal text},
-    bg=block title.bg!50!normal text.bg
+    bg=mLightGrey
   }
+  \setbeamercolor{block title alerted}{%
+    use={normal text},
+    fg=normal text.fg,
+    bg=mPaleRed
+}
+\setbeamercolor{block title example}{%
+    use={normal text},
+    fg=normal text.fg,
+    bg=mPaleGreen
+}
 }
 \setbeamercolor{block title alerted}{%
-    use={block title, alerted text},
+    use={block title,alerted text},
     bg=block title.bg,
     fg=alerted text.fg
 }
